@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/aksoyih/task-manager#readme",
   "dependencies": {
-    "mongodb": "^3.6.9"
+    "mongodb": "^3.6.9",
+    "mongoose": "^5.13.2"
   }
 }
