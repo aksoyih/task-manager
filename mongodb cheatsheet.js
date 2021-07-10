@@ -79,3 +79,6 @@ db.collection('tasks').updateMany({
   }).catch((error)=>{
     console.log(error)
 })
+
+
+//mongodb/bin/mongod.exe --dbpath mongodb-data
