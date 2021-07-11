@@ -31,6 +31,11 @@ router.post('/users', async (req, res) => {
         const token = await user.generateAuthToken()
         res.status(201).send({ user, token })
     } catch (e) {
+        if(e.keyPattern.email === 1 && e.code === 11000){
+            return res.status(400).send({
+                error: "Email is already taken!"
+            })
+        }
         res.status(400).send(e)
     }
 })
